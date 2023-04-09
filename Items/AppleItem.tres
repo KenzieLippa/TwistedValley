@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://Items/HealingItem.gd" type="Script" id=1]
+[ext_resource path="res://WestwickAssets/Sprites/Apple.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+name = "Apple"
+description = "A small evil substance meant to 
+ward off doctors.
+ (heals 2HP)"
+amount = 1
+overworld_sprite = ExtResource( 2 )
+heal_amount = 2

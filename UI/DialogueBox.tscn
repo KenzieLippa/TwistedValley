@@ -1,0 +1,129 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://WestwickAssets/Sprites/PortraitEdge.png" type="Texture" id=1]
+[ext_resource path="res://UI/DefaultTheme.tres" type="Theme" id=2]
+[ext_resource path="res://WestwickAssets/Sprites/DialogShadow.png" type="Texture" id=3]
+[ext_resource path="res://WestwickAssets/Sprites/StumpyPortrait.png" type="Texture" id=4]
+[ext_resource path="res://UI/DialogueBox.gd" type="Script" id=5]
+[ext_resource path="res://WestwickAssets/MuiscAndSounds/a_voice.wav" type="AudioStream" id=6]
+
+[node name="DialogueBox" type="TextureRect"]
+pause_mode = 2
+self_modulate = Color( 1, 1, 1, 0.423529 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 2 )
+texture = ExtResource( 3 )
+expand = true
+script = ExtResource( 5 )
+
+[node name="HboxContainer" type="HBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+custom_constants/separation = 0
+
+[node name="DialogueContainer" type="HBoxContainer" parent="HboxContainer"]
+margin_top = 5.0
+margin_right = 228.0
+margin_bottom = 72.0
+size_flags_vertical = 8
+custom_constants/separation = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="HboxContainer/DialogueContainer"]
+margin_right = 13.0
+margin_bottom = 67.0
+custom_constants/margin_bottom = 20
+
+[node name="LeftEdge" type="TextureRect" parent="HboxContainer/DialogueContainer/MarginContainer"]
+margin_right = 13.0
+margin_bottom = 47.0
+texture = ExtResource( 1 )
+stretch_mode = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HboxContainer/DialogueContainer"]
+margin_left = 13.0
+margin_right = 228.0
+margin_bottom = 67.0
+custom_constants/separation = 0
+
+[node name="NameTag" type="PanelContainer" parent="HboxContainer/DialogueContainer/VBoxContainer"]
+margin_right = 58.0
+margin_bottom = 19.0
+size_flags_horizontal = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="HboxContainer/DialogueContainer/VBoxContainer/NameTag"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 54.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 50, 10 )
+custom_constants/margin_left = 3
+
+[node name="PortraitName" type="Label" parent="HboxContainer/DialogueContainer/VBoxContainer/NameTag/MarginContainer"]
+unique_name_in_owner = true
+margin_left = 3.0
+margin_right = 50.0
+margin_bottom = 11.0
+
+[node name="PanelContainer" type="PanelContainer" parent="HboxContainer/DialogueContainer/VBoxContainer"]
+margin_top = 19.0
+margin_right = 215.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 215, 48 )
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="HboxContainer/DialogueContainer/VBoxContainer/PanelContainer"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 211.0
+margin_bottom = 44.0
+custom_constants/margin_right = 2
+custom_constants/margin_top = 2
+custom_constants/margin_left = 2
+custom_constants/margin_bottom = 2
+
+[node name="TextBox" type="RichTextLabel" parent="HboxContainer/DialogueContainer/VBoxContainer/PanelContainer/MarginContainer"]
+unique_name_in_owner = true
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 205.0
+margin_bottom = 38.0
+bbcode_enabled = true
+
+[node name="PortraitContainer" type="HBoxContainer" parent="HboxContainer"]
+margin_left = 228.0
+margin_right = 313.0
+margin_bottom = 72.0
+custom_constants/separation = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="HboxContainer/PortraitContainer"]
+margin_right = 72.0
+margin_bottom = 72.0
+
+[node name="Portrait" type="TextureRect" parent="HboxContainer/PortraitContainer/PanelContainer"]
+unique_name_in_owner = true
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 68.0
+margin_bottom = 68.0
+texture = ExtResource( 4 )
+
+[node name="MarginContainer" type="MarginContainer" parent="HboxContainer/PortraitContainer"]
+margin_left = 72.0
+margin_right = 85.0
+margin_bottom = 72.0
+custom_constants/margin_top = 2
+
+[node name="RightEdge" type="TextureRect" parent="HboxContainer/PortraitContainer/MarginContainer"]
+margin_top = 2.0
+margin_right = 13.0
+margin_bottom = 72.0
+texture = ExtResource( 1 )
+flip_h = true
+
+[node name="Voice" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -10.0
+bus = "Sounds"
