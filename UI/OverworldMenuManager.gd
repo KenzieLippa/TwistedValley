@@ -2,7 +2,7 @@ extends MarginContainer
 class_name OverworldMenuManager
 
 #need access to inventory and stats
-var stats : PlayerClassStats = RefrenceStash.elizabethStats
+var stats : PlayerClassStats = RefrenceStash.playerStats
 var inventory : Inventory = RefrenceStash.inventory
 
 
@@ -83,10 +83,11 @@ func _on_OverworldMenu_option_selected(option : int) -> void:
 			get_tree().set_input_as_handled()
 			get_tree().paused = false #dont want it to be false when we go to the next scene
 			SaveManager.load_game()
-		OverworldMenu.EXIT:
+		OverworldMenu.QUIT:
 			uiStack.pop() #get out of the menu
 			#unpause
 			get_tree().paused = false
+			get_tree().quit()
 #scene stack keeping things in memory that arent being processed but are still recieving signals
 #updating the bar in the main scene but the bar isnt in the scene tree when we in battle
 #this means that it cant create a tween

@@ -2,7 +2,7 @@ extends FocusMenu
 
 class_name OverworldMenu
 
-enum {STATS, ITEMS, SAVE, LOAD, EXIT}
+enum {STATS, ITEMS, SAVE, LOAD, QUIT}
 
 signal option_selected(option)
 
@@ -25,5 +25,5 @@ func _on_LoadButton_button_down():
 	emit_signal("option_selected", LOAD)
 
 
-func _on_ExitButton_button_down():
-	emit_signal("option_selected", EXIT)
+func _on_QuitButton_button_down():
+	emit_signal("option_selected", QUIT)

@@ -2,7 +2,7 @@ extends Control
 
 const RUN_BATTLE_ACTION = preload("res://BattleActions/RunBattleAction.tres")
 
-var elizabeth_stats : PlayerClassStats = RefrenceStash.elizabethStats
+var player_stats = RefrenceStash.playerStats
 var inventory : Inventory = RefrenceStash.inventory
 var uiStack := UIStack.new() #can create and use where needed
 var selected_resource : Resource 
@@ -17,7 +17,7 @@ onready var info_menu = $"%InfoMenu"
 signal battle_menu_resource_selected(selected_resource)
 
 func _ready() ->void:
-	action_list.fill(elizabeth_stats.battle_actions)
+	action_list.fill(player_stats.battle_actions)
 	#fill action and items list
 	#item list fills itself now so we don't have to worry about it
 	#item_list.fill(elizabeth_stats.inventory.items)

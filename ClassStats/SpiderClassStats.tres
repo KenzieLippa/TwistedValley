@@ -2,7 +2,7 @@
 
 [ext_resource path="res://ClassStats/ClassStats.gd" type="Script" id=1]
 [ext_resource path="res://BattleActions/MeleeBattleAction.tres" type="Resource" id=2]
-[ext_resource path="res://Battle/SpiderBattleAnimations.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Battle/BattleAnimations/SpiderBattleAnimations.tscn" type="PackedScene" id=3]
 [ext_resource path="res://AIs/RandomActionAI.gd" type="Script" id=4]
 
 [resource]

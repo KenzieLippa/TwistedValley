@@ -3,7 +3,7 @@
 [ext_resource path="res://UI/DefaultTheme.tres" type="Theme" id=1]
 [ext_resource path="res://UI/ValueBar.tscn" type="PackedScene" id=2]
 [ext_resource path="res://WestwickAssets/Sprites/ExperienceBar.png" type="Texture" id=3]
-[ext_resource path="res://UI/ElizabethStats.gd" type="Script" id=4]
+[ext_resource path="res://Player/PlayerStats.gd" type="Script" id=4]
 
 [node name="ElizabethStats" type="PanelContainer"]
 margin_right = 14.0

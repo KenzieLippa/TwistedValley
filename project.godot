@@ -17,7 +17,7 @@ _global_script_classes=[ {
 "base": "Resource",
 "class": "AsyncTurnPool",
 "language": "GDScript",
-"path": "res://AsyncTurnPool.gd"
+"path": "res://Battle/AsyncTurnPool.gd"
 }, {
 "base": "Resource",
 "class": "BattleAction",
@@ -27,12 +27,12 @@ _global_script_classes=[ {
 "base": "Sprite",
 "class": "BattleAnimations",
 "language": "GDScript",
-"path": "res://Battle/BattleAnimations.gd"
+"path": "res://Battle/BattleAnimations/BattleAnimations.gd"
 }, {
 "base": "Camera2D",
 "class": "BattleCamera",
 "language": "GDScript",
-"path": "res://Battle/BattleCamera.gd"
+"path": "res://CameraEffects/BattleCamera.gd"
 }, {
 "base": "FocusMenu",
 "class": "BattleMenu",
@@ -47,7 +47,7 @@ _global_script_classes=[ {
 "base": "Resource",
 "class": "Character",
 "language": "GDScript",
-"path": "res://Characters/Character.gd"
+"path": "res://NPC/Character.gd"
 }, {
 "base": "Resource",
 "class": "ClassStats",
@@ -82,7 +82,7 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "Interactable",
 "language": "GDScript",
-"path": "res://World/Interactable.gd"
+"path": "res://World/Item/Interactable.gd"
 }, {
 "base": "Resource",
 "class": "Inventory",
@@ -97,7 +97,7 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "Math",
 "language": "GDScript",
-"path": "res://Math.gd"
+"path": "res://Other/Math.gd"
 }, {
 "base": "DamageBattleAction",
 "class": "MeleeBattleAction",
@@ -107,7 +107,7 @@ _global_script_classes=[ {
 "base": "Interactable",
 "class": "NPC",
 "language": "GDScript",
-"path": "res://World/NPC.gd"
+"path": "res://NPC/NPC.gd"
 }, {
 "base": "FocusMenu",
 "class": "OverworldMenu",
@@ -127,7 +127,7 @@ _global_script_classes=[ {
 "base": "ClassStats",
 "class": "PlayerClassStats",
 "language": "GDScript",
-"path": "res://ClassStats/PlayerClassStats.gd"
+"path": "res://Player/PlayerClassStats.gd"
 }, {
 "base": "Node2D",
 "class": "Projectile",
@@ -142,7 +142,7 @@ _global_script_classes=[ {
 "base": "ParentButton",
 "class": "ResourceButton",
 "language": "GDScript",
-"path": "res://ResourceButton.gd"
+"path": "res://Other/ResourceButton.gd"
 }, {
 "base": "FocusMenu",
 "class": "ScrollList",
@@ -152,7 +152,7 @@ _global_script_classes=[ {
 "base": "Resource",
 "class": "TurnManager",
 "language": "GDScript",
-"path": "res://TurnManager.gd"
+"path": "res://Singletons/TurnManager.gd"
 }, {
 "base": "Resource",
 "class": "UIStack",
@@ -195,19 +195,23 @@ _global_script_class_icons={
 [application]
 
 config/name="Turn Based Course"
-run/main_scene="res://World/Town.tscn"
+run/main_scene="res://World/Locations/Town.tscn"
+
+[audio]
+
+default_bus_layout="res://Other/default_bus_layout.tres"
 
 [autoload]
 
-SceneStack="*res://SceneStack.gd"
-RefrenceStash="*res://RefrenceStash.gd"
-Events="*res://Events.gd"
+SceneStack="*res://Singletons/SceneStack.gd"
+RefrenceStash="*res://Singletons/RefrenceStash.gd"
+Events="*res://Singletons/Events.gd"
 GlobalUi="*res://UI/GlobalUI.tscn"
-LevelSwapper="*res://LevelSwapper.gd"
-WorldStash="*res://WorldStash.gd"
+LevelSwapper="*res://Singletons/LevelSwapper.gd"
+WorldStash="*res://Singletons/WorldStash.gd"
 Transition="*res://UI/Transition.tscn"
-MusicPlayer="*res://MusicPlayer.tscn"
-SaveManager="*res://SaveManager.gd"
+MusicPlayer="*res://Singletons/MusicPlayer.tscn"
+SaveManager="*res://Singletons/SaveManager.gd"
 
 [display]
 
@@ -306,4 +310,4 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
-environment/default_environment="res://default_env.tres"
+environment/default_environment="res://Other/default_env.tres"

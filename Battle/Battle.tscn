@@ -11,11 +11,11 @@
 [ext_resource path="res://WestwickAssets/Sprites/BattleTreesForeground.png" type="Texture" id=9]
 [ext_resource path="res://Battle/BattleUnit.tscn" type="PackedScene" id=10]
 [ext_resource path="res://ClassStats/WerewolfClassStats.tres" type="Resource" id=11]
-[ext_resource path="res://ClassStats/ElizabethClassStats.tres" type="Resource" id=12]
+[ext_resource path="res://Player/PlayerClassStats.tres" type="Resource" id=12]
 [ext_resource path="res://UI/BattleUnitInfo.tscn" type="PackedScene" id=13]
 [ext_resource path="res://UI/LevelUpUI.tscn" type="PackedScene" id=14]
 [ext_resource path="res://UI/BattleMenuManager.tscn" type="PackedScene" id=15]
-[ext_resource path="res://Battle/BattleCamera.tscn" type="PackedScene" id=16]
+[ext_resource path="res://CameraEffects/BattleCamera.tscn" type="PackedScene" id=16]
 [ext_resource path="res://WestwickAssets/MuiscAndSounds/a_levelup.wav" type="AudioStream" id=17]
 
 [sub_resource type="Animation" id=1]
