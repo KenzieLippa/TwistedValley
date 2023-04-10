@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://WestwickAssets/Sprites/Arrows.png" type="Texture" id=1]
-[ext_resource path="res://WestwickAssets/Sprites/WaterDetails.png" type="Texture" id=2]
-[ext_resource path="res://WestwickAssets/Sprites/SmallRocks.png" type="Texture" id=3]
+[ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/Arrows.png" type="Texture" id=1]
+[ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/WaterDetails.png" type="Texture" id=2]
+[ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/SmallRocks.png" type="Texture" id=3]
 
 [sub_resource type="TileSet" id=1]
 0/name = "SmallRocks.png 0"

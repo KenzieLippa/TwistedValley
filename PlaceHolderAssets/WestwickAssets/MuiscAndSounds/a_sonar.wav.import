@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/a_sonar.wav-9d12375d0cc31bbc45befa9564d35c6c.sample"
+
+[deps]
+
+source_file="res://PlaceHolderAssets/WestwickAssets/MuiscAndSounds/a_sonar.wav"
+dest_files=[ "res://.import/a_sonar.wav-9d12375d0cc31bbc45befa9564d35c6c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

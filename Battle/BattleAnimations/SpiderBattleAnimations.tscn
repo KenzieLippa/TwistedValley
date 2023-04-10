@@ -1,8 +1,8 @@
 [gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Battle/BattleAnimations/BattleAnimations.tscn" type="PackedScene" id=1]
-[ext_resource path="res://WestwickAssets/Sprites/SpiderBattle.png" type="Texture" id=2]
-[ext_resource path="res://WestwickAssets/MuiscAndSounds/a_spider_die.wav" type="AudioStream" id=3]
+[ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/SpiderBattle.png" type="Texture" id=2]
+[ext_resource path="res://PlaceHolderAssets/WestwickAssets/MuiscAndSounds/a_spider_die.wav" type="AudioStream" id=3]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Approach"

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/a_battle_music.mp3-789d89b4cad88ea9b5589bef0ec2b58b.mp3str"
+
+[deps]
+
+source_file="res://PlaceHolderAssets/WestwickAssets/MuiscAndSounds/a_battle_music.mp3"
+dest_files=[ "res://.import/a_battle_music.mp3-789d89b4cad88ea9b5589bef0ec2b58b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,6 +1,6 @@
 [gd_scene load_steps=50 format=2]
 
-[ext_resource path="res://WestwickAssets/Tiles/WaterTileset.png" type="Texture" id=1]
+[ext_resource path="res://PlaceHolderAssets/WestwickAssets/Tiles/WaterTileset.png" type="Texture" id=1]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )

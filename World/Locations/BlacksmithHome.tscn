@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://WestwickAssets/Sprites/HouseBlacksmith.png" type="Texture" id=1]
+[ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/HouseBlacksmith.png" type="Texture" id=1]
 [ext_resource path="res://World/Door.tscn" type="PackedScene" id=2]
 
 [node name="BlacksmithHome" type="StaticBody2D"]

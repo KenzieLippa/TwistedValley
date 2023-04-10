@@ -4,10 +4,10 @@
 [ext_resource path="res://World/Tiles/HouseInteriorTiles.tscn" type="PackedScene" id=2]
 [ext_resource path="res://CameraEffects/CameraLimits.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/Props/Barrel.tscn" type="PackedScene" id=4]
-[ext_resource path="res://WestwickAssets/Sprites/Rug.png" type="Texture" id=5]
+[ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/Rug.png" type="Texture" id=5]
 [ext_resource path="res://World/Props/Bed.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/Props/Forge.tscn" type="PackedScene" id=7]
-[ext_resource path="res://WestwickAssets/Sprites/WeaponWall.png" type="Texture" id=8]
+[ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/WeaponWall.png" type="Texture" id=8]
 [ext_resource path="res://World/Props/Anvil.tscn" type="PackedScene" id=9]
 [ext_resource path="res://UI/OverworldUI.tscn" type="PackedScene" id=10]
 

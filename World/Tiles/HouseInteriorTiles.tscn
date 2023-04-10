@@ -1,10 +1,10 @@
 [gd_scene load_steps=35 format=2]
 
-[ext_resource path="res://WestwickAssets/Sprites/HouseWalls.png" type="Texture" id=1]
-[ext_resource path="res://WestwickAssets/Sprites/BlacksmithFloorDetails.png" type="Texture" id=2]
-[ext_resource path="res://WestwickAssets/Sprites/BlacksmithFloor.png" type="Texture" id=3]
-[ext_resource path="res://WestwickAssets/Sprites/BlacksmithRockFloor.png" type="Texture" id=4]
-[ext_resource path="res://WestwickAssets/Sprites/StoneHouseWalls.png" type="Texture" id=5]
+[ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/HouseWalls.png" type="Texture" id=1]
+[ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/BlacksmithFloorDetails.png" type="Texture" id=2]
+[ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/BlacksmithFloor.png" type="Texture" id=3]
+[ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/BlacksmithRockFloor.png" type="Texture" id=4]
+[ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/StoneHouseWalls.png" type="Texture" id=5]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )

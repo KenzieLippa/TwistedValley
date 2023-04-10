@@ -37,7 +37,7 @@ _global_script_classes=[ {
 "base": "FocusMenu",
 "class": "BattleMenu",
 "language": "GDScript",
-"path": "res://UI/BattleMenu.gd"
+"path": "res://UI/Battle/BattleMenu.gd"
 }, {
 "base": "Node2D",
 "class": "BattleUnit",

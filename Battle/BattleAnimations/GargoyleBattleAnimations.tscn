@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://WestwickAssets/Sprites/GargoyleBattle.png" type="Texture" id=1]
+[ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/GargoyleBattle.png" type="Texture" id=1]
 [ext_resource path="res://Battle/BattleAnimations/BattleAnimations.tscn" type="PackedScene" id=2]
 
 [sub_resource type="Animation" id=3]
