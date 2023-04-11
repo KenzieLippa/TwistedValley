@@ -218,6 +218,7 @@ WorldStash="*res://Singletons/WorldStash.gd"
 Transition="*res://UI/Transition.tscn"
 MusicPlayer="*res://Singletons/MusicPlayer.tscn"
 SaveManager="*res://Singletons/SaveManager.gd"
+DateAndTime="*res://Singletons/DateAndTime.gd"
 
 [display]
 

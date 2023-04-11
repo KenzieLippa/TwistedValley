@@ -17,6 +17,7 @@ func save_game() -> void:
 	var world_data : Dictionary = WorldStash.data
 	#players global position is saved in the level swapper
 	var player_global_position : Vector2 = RefrenceStash.player.global_position
+	#adding in save information for current day, time and season
 	var save_data : Dictionary = {
 		#store save data as a json
 		#can use resources as save data

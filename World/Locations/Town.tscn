@@ -78,4 +78,13 @@ tile_data = PoolIntArray( 65536, 0, 65536, 65544, 0, 0, 65551, 0, 65536, 262158,
 [node name="GreenCow" parent="." instance=ExtResource( 16 )]
 position = Vector2( 61, 139 )
 
+[node name="Door2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 175, -22 )
+new_area = "res://World/Locations/CartoonMeadow.tscn"
+connection = 1
+
+[node name="DropPoint" parent="Door2" index="1"]
+position = Vector2( 0, 22 )
+
 [editable path="Door"]
+[editable path="Door2"]
