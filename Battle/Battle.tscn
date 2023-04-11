@@ -12,9 +12,9 @@
 [ext_resource path="res://Battle/BattleUnit.tscn" type="PackedScene" id=10]
 [ext_resource path="res://ClassStats/WerewolfClassStats.tres" type="Resource" id=11]
 [ext_resource path="res://Player/PlayerClassStats.tres" type="Resource" id=12]
-[ext_resource path="res://UI/Battle/BattleUnitInfo.tscn" type="PackedScene" id=13]
-[ext_resource path="res://UI/LevelUpUI.tscn" type="PackedScene" id=14]
-[ext_resource path="res://UI/Battle/BattleMenuManager.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Battle/BattleUI/BattleUnitInfo.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Battle/BattleUI/LevelUpUI.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Battle/BattleUI/BattleMenuManager.tscn" type="PackedScene" id=15]
 [ext_resource path="res://CameraEffects/BattleCamera.tscn" type="PackedScene" id=16]
 [ext_resource path="res://PlaceHolderAssets/WestwickAssets/MuiscAndSounds/a_levelup.wav" type="AudioStream" id=17]
 

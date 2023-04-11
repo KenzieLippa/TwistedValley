@@ -1,7 +1,7 @@
 [gd_resource type="Theme" load_steps=8 format=2]
 
-[ext_resource path="res://UI/WestwickFont.tres" type="DynamicFont" id=1]
-[ext_resource path="res://UI/PanelStyleBox.tres" type="StyleBox" id=2]
+[ext_resource path="res://UI/Themes/PanelStyleBox.tres" type="StyleBox" id=1]
+[ext_resource path="res://UI/Themes/WestwickFont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/ScrollBarBackground.png" type="Texture" id=3]
 [ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/ScrollBarButton.png" type="Texture" id=4]
 
@@ -24,7 +24,7 @@ margin_top = 2.0
 margin_bottom = 2.0
 
 [resource]
-default_font = ExtResource( 1 )
+default_font = ExtResource( 2 )
 Button/colors/font_color = Color( 1, 1, 1, 1 )
 Button/colors/font_color_focus = Color( 0.972549, 0.941176, 0.211765, 1 )
 Button/colors/font_color_hover = Color( 0.972549, 0.941176, 0.211765, 1 )
@@ -34,9 +34,9 @@ Button/styles/focus = SubResource( 1 )
 Button/styles/hover = SubResource( 1 )
 Button/styles/normal = SubResource( 1 )
 Button/styles/pressed = SubResource( 1 )
-PanelContainer/styles/panel = ExtResource( 2 )
+PanelContainer/styles/panel = ExtResource( 1 )
 VScrollBar/styles/grabber = SubResource( 3 )
 VScrollBar/styles/grabber_highlight = SubResource( 3 )
-VScrollBar/styles/grabber_pressed = ExtResource( 2 )
+VScrollBar/styles/grabber_pressed = ExtResource( 1 )
 VScrollBar/styles/scroll = SubResource( 2 )
-VScrollBar/styles/scroll_focus = ExtResource( 2 )
+VScrollBar/styles/scroll_focus = ExtResource( 1 )

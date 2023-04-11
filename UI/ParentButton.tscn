@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://UI/DefaultTheme.tres" type="Theme" id=1]
+[ext_resource path="res://UI/Themes/DefaultTheme.tres" type="Theme" id=1]
 [ext_resource path="res://UI/ParentButton.gd" type="Script" id=2]
 [ext_resource path="res://PlaceHolderAssets/WestwickAssets/MuiscAndSounds/a_menu_select.wav" type="AudioStream" id=3]
 [ext_resource path="res://PlaceHolderAssets/WestwickAssets/MuiscAndSounds/a_menu_move.wav" type="AudioStream" id=4]
