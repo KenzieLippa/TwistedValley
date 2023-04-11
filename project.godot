@@ -22,7 +22,7 @@ _global_script_classes=[ {
 "base": "Resource",
 "class": "BattleAction",
 "language": "GDScript",
-"path": "res://BattleActions/BattleAction.gd"
+"path": "res://Battle/BattleActions/BattleAction.gd"
 }, {
 "base": "Sprite",
 "class": "BattleAnimations",
@@ -37,7 +37,7 @@ _global_script_classes=[ {
 "base": "FocusMenu",
 "class": "BattleMenu",
 "language": "GDScript",
-"path": "res://UI/Battle/BattleMenu.gd"
+"path": "res://Battle/BattleUI/BattleMenu.gd"
 }, {
 "base": "Node2D",
 "class": "BattleUnit",
@@ -62,7 +62,7 @@ _global_script_classes=[ {
 "base": "BattleAction",
 "class": "DamageBattleAction",
 "language": "GDScript",
-"path": "res://BattleActions/DamageBattleAction.gd"
+"path": "res://Battle/BattleActions/DamageBattleAction.gd"
 }, {
 "base": "Area2D",
 "class": "Door",
@@ -102,7 +102,7 @@ _global_script_classes=[ {
 "base": "DamageBattleAction",
 "class": "MeleeBattleAction",
 "language": "GDScript",
-"path": "res://BattleActions/MeleeBattleAction.gd"
+"path": "res://Battle/BattleActions/MeleeBattleAction.gd"
 }, {
 "base": "Interactable",
 "class": "NPC",
@@ -112,12 +112,12 @@ _global_script_classes=[ {
 "base": "FocusMenu",
 "class": "OverworldMenu",
 "language": "GDScript",
-"path": "res://UI/OverworldMenu.gd"
+"path": "res://World/OverworldUI/OverworldMenu.gd"
 }, {
 "base": "MarginContainer",
 "class": "OverworldMenuManager",
 "language": "GDScript",
-"path": "res://UI/OverworldMenuManager.gd"
+"path": "res://World/OverworldUI/OverworldMenuManager.gd"
 }, {
 "base": "Button",
 "class": "ParentButton",
@@ -137,7 +137,7 @@ _global_script_classes=[ {
 "base": "DamageBattleAction",
 "class": "RangedBattleAction",
 "language": "GDScript",
-"path": "res://BattleActions/RangedBattleAction.gd"
+"path": "res://Battle/BattleActions/RangedBattleAction.gd"
 }, {
 "base": "ParentButton",
 "class": "ResourceButton",

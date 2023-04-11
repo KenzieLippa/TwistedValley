@@ -1,6 +1,6 @@
 extends Control
 
-const RUN_BATTLE_ACTION = preload("res://BattleActions/RunBattleAction.tres")
+const RUN_BATTLE_ACTION = preload("res://Battle/BattleActions/RunBattleAction.tres")
 
 var player_stats = RefrenceStash.playerStats
 var inventory : Inventory = RefrenceStash.inventory

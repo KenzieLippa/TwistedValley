@@ -7,7 +7,7 @@ export(Array, Resource) var items : Array = []
 signal item_added(item_index, item)
 signal item_changed(item_index, item)
 signal item_removed(item_index)
-
+#signals are connected to the item list scene found in 'inventory'
 
 func add_item(item: Item, amount : int = 1) -> void:
 	#deault add item is one but u can add more
