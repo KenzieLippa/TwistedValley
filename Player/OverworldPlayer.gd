@@ -9,6 +9,11 @@ var velocity := Vector2.ZERO #strict typing, give extra info so it doesnt type o
 var encounter_meter := MAX_ENCOUNTER_METER #set this to the max but this value will be updated
 var encounter_chance := MIN_ENCOUNTER_CHANCE
 var last_door_connection = -1
+#adding in states?
+#not sure if i will keep this
+#im curious how he is doing this with different scripts tho im not sure
+var state 
+var state_manager
 #type autimatically to what u think it shld be
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #tell godot tht shld always be a float and then telling specifically that theres no return value
@@ -26,20 +31,29 @@ func _init() -> void:
 		queue_free()
 
 func _ready():
+	
 	#will crash if we change rooms
 	#only set if level swapper doesnt have the player
 	if not LevelSwapper.player is KinematicBody2D:
 		RefrenceStash.player = self #save ourselves into th refrence stash
 	#LevelSwapper.player = self #set our self to the level swapper player
+	#new state implimentation
+	state_manager = StateManager.new()
+	#will make as a func later
+	#change_state("idle") 
 	interactable_detector.rotation = Vector2.DOWN.angle()
 # warning-ignore:unused_argument
+func get_input():
+	var input_vector = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	return input_vector
 func _physics_process(delta : float) -> void:
 	#returns the vector that is what ever u are pressing
 	#need negative x then pos x, negative y then pos y for th get vector func, returns what ever is 
 	#collected as the input
-	var input_vector = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	#var input_vector = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	#get vector already normalizes it so we dont need to re-normalize, even th diags will be 1
 	#if not then u can use .normalized()
+	var input_vector = get_input()
 	velocity = input_vector * WALK_SPEED #makes sure that wherever your going its 1
 # warning-ignore:return_value_discarded
 	move_and_slide(velocity) #pass in the velocity, already mults by delta
@@ -48,6 +62,7 @@ func _physics_process(delta : float) -> void:
 		animate_walk()
 		interactable_detector.rotation = velocity.angle()
 		encounter_check(delta)#if moving then pass in
+		#can i put a state machine in here? or should i refrence out to another place for cleanliness
 	else:
 		animate_idle()
 
