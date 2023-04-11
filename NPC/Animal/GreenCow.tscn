@@ -1,7 +1,8 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://NPC/Animal/Animal.tscn" type="PackedScene" id=1]
 [ext_resource path="res://PlaceHolderAssets/SproutLandsSprites/characters/Animal SpriteSheets/cow/Green cow animation sprites.png" type="Texture" id=2]
+[ext_resource path="res://NPC/Animal/GreenCow.gd" type="Script" id=3]
 
 [sub_resource type="Animation" id=2]
 resource_name = "Chew"
@@ -169,6 +170,8 @@ radius = 8.02363
 height = 5.96107
 
 [node name="GreenCow" instance=ExtResource( 1 )]
+collision_layer = 9
+script = ExtResource( 3 )
 
 [node name="Sprite" parent="." index="0"]
 position = Vector2( 0, -12 )
@@ -194,3 +197,5 @@ anims/Walk = SubResource( 11 )
 position = Vector2( 1, -6 )
 rotation = -1.57876
 shape = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="." index="3"]
