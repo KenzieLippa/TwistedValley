@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://World/Tiles/Grass2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Tiles/Stone.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://World/Tiles/BlueBush.tscn" type="PackedScene" id=5]
 [ext_resource path="res://World/Tiles/WallTiles.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/Tiles/DetailTiles.tscn" type="PackedScene" id=7]
+[ext_resource path="res://World/OverworldUI/OverworldUI.tscn" type="PackedScene" id=8]
 
 [node name="CartoonMeadow" type="YSort"]
 
@@ -38,5 +39,7 @@ tile_data = PoolIntArray( -2, 0, 0, -1, 0, 0, -65536, 0, 0, -65535, 0, 0, -65534
 
 [node name="DetailTiles" parent="." instance=ExtResource( 7 )]
 tile_data = PoolIntArray( 720921, 0, 0, 851978, 0, 0, 1245191, 0, 0, 1245209, 0, 0, 1310737, 1, 1, 1310738, 1, 1 )
+
+[node name="OverworldUI" parent="." instance=ExtResource( 8 )]
 
 [editable path="Door"]

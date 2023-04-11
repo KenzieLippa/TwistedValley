@@ -7,16 +7,16 @@ export(String, MULTILINE) var description
 
 onready var animation_player = $AnimationPlayer
 
-signal animation_finished #creating our own class here
+#signal animation_finished #creating our own class here
 
 func _run_interaction():
 	pass
 	
 
 #should have put this all in a parent class, perhaps wld be smart to do in future
-func _ready() -> void:
+#func _ready() -> void:
 	#connecting to our own self in the emmit and then sending th signal out ourselves too
-	animation_player.connect("animation_finished", self, "_on_animation_finished")
+	#animation_player.connect("animation_finished", self, "_on_animation_finished")
 	#on animation finished then it passes an argument out
 	#trying to emit signal based on the animation finished
 	#so need a custom func

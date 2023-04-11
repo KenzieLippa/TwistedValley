@@ -15,6 +15,8 @@ func save_game() -> void:
 	var inventory : Inventory = RefrenceStash.inventory
 	#remeber the players position
 	var world_data : Dictionary = WorldStash.data
+	#might end up saving the date and time to the world data somewhere
+	
 	#players global position is saved in the level swapper
 	var player_global_position : Vector2 = RefrenceStash.player.global_position
 	#adding in save information for current day, time and season
@@ -24,6 +26,14 @@ func save_game() -> void:
 		#safer to do it as a json tho
 		#first thing to save is current scene
 		"current_scene" : get_tree().current_scene.filename,
+		#save the date and time for now
+		"enviroment" : {
+			"date" : EnviromentStash.currDay,
+			"time" : EnviromentStash.currTime,
+			"season" : EnviromentStash.currSeason,
+			"weather" : EnviromentStash.currWeather
+		},
+		
 		"player" : {
 			"x" : player_global_position.x,
 			"y" : player_global_position.y,
@@ -64,6 +74,12 @@ func load_game() -> void:
 	var load_data : Dictionary = JSON.parse(data_string).result
 	#update the world stash data, both are dictionaries
 	WorldStash.data = load_data.world_data
+	
+	#set the date and time
+	EnviromentStash.currDay = load_data.enviroment.date
+	EnviromentStash.currTime = load_data.enviroment.time
+	EnviromentStash.currSeason = load_data.enviroment.season
+	EnviromentStash.currWeather = load_data.enviroment.weather
 	
 	#get access to the stats from the refrence stash
 	var stats = RefrenceStash.playerStats
