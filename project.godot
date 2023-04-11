@@ -14,6 +14,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://AIs/AI.gd"
 }, {
+"base": "Interactable",
+"class": "Animal",
+"language": "GDScript",
+"path": "res://NPC/Animal/Animal.gd"
+}, {
 "base": "Resource",
 "class": "AsyncTurnPool",
 "language": "GDScript",
@@ -82,7 +87,7 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "Interactable",
 "language": "GDScript",
-"path": "res://World/Item/Interactable.gd"
+"path": "res://World/ItemInteraction/Interactable.gd"
 }, {
 "base": "Resource",
 "class": "Inventory",
@@ -161,6 +166,7 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "AI": "",
+"Animal": "",
 "AsyncTurnPool": "",
 "BattleAction": "",
 "BattleAnimations": "",
