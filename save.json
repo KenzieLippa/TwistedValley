@@ -1,1 +1,1 @@
-{"current_scene":"res://World/Locations/Town.tscn","enviroment":{"date":11,"time":"12:00","season":0,"weather":0},"player":{"x":150,"y":77},"stats":{"level":1,"health":10,"experience":0},"inventory":[{"resource_path":"res://Items/AppleItem.tres","amount":1}],"world_data":{}}
+{"current_scene":"res://World/Locations/Town.tscn","enviroment":{"date":1,"minute":0,"hour":3,"year":1,"season":0,"weather":0},"player":{"x":150,"y":77},"stats":{"level":1,"health":10,"experience":0},"inventory":[{"resource_path":"res://Items/AppleItem.tres","amount":1}],"world_data":{}}

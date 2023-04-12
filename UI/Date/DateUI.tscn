@@ -49,6 +49,7 @@ unique_name_in_owner = true
 margin_right = 15.0
 margin_bottom = 11.0
 theme = ExtResource( 2 )
+text = "9"
 
 [node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
 margin_left = 19.0
@@ -74,6 +75,7 @@ margin_right = 15.0
 margin_bottom = 11.0
 grow_horizontal = 0
 theme = ExtResource( 2 )
+text = "00"
 align = 2
 
 [node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer/HBoxContainer"]
@@ -90,6 +92,7 @@ margin_top = 4.0
 margin_right = 31.0
 margin_bottom = 15.0
 theme = ExtResource( 2 )
+text = "AM"
 align = 2
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]

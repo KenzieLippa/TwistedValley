@@ -81,7 +81,7 @@ func load_game() -> void:
 	EnviromentStash.currDay = load_data.enviroment.date
 	EnviromentStash.currMinute= load_data.enviroment.minute
 	EnviromentStash.currHour = load_data.enviroment.hour
-	EnviromentStash.currYear = load_data.enciroment.year
+	EnviromentStash.currYear = load_data.enviroment.year
 	EnviromentStash.currSeason = load_data.enviroment.season
 	EnviromentStash.currWeather = load_data.enviroment.weather
 	

@@ -9,7 +9,7 @@ var currSeason = Seasons.SPRING
 enum Weather {SUNNY, CLOUDY, RAINING, SNOWING}
 var currWeather = Weather.SUNNY
 var currMinute = 0
-var currHour = 1
+var currHour = 9
 
 #var date_and_time = RefrenceStash.dateAndTime
 
