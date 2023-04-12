@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://World/Door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Tiles/HouseInteriorTiles.tscn" type="PackedScene" id=2]
@@ -9,7 +9,6 @@
 [ext_resource path="res://World/Props/Forge.tscn" type="PackedScene" id=7]
 [ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/WeaponWall.png" type="Texture" id=8]
 [ext_resource path="res://World/Props/Anvil.tscn" type="PackedScene" id=9]
-[ext_resource path="res://World/OverworldUI/OverworldUI.tscn" type="PackedScene" id=10]
 
 [node name="BlacksmithHomeInterior" type="YSort"]
 
@@ -73,7 +72,5 @@ margin_top = -149.0
 margin_right = 334.0
 margin_bottom = 261.0
 color = Color( 0, 0, 0, 1 )
-
-[node name="OverworldUI" parent="." instance=ExtResource( 10 )]
 
 [editable path="Door"]
