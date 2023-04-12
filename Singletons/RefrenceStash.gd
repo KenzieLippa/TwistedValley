@@ -15,6 +15,8 @@ var playerStats : PlayerClassStats = load("res://Player/PlayerClassStats.tres")
 #want the inventory to be persistant as well
 var inventory :Inventory  = load("res://Items/Inventory.tres")
 
+#var dateAndTime = DateAndTime.new()
+
 var random_encounters := []
 #updates every time we go into a room with a random encounter
 var encounter_class : ClassStats

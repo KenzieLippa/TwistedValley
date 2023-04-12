@@ -1,1 +1,1 @@
-{"current_scene":"res://World/Locations/WestMeadow.tscn","player":{"x":511.336304,"y":239.001648},"stats":{"level":2,"health":6,"experience":5},"inventory":[{"resource_path":"res://Items/AppleItem.tres","amount":1}],"world_data":{}}
+{"current_scene":"res://World/Locations/Town.tscn","enviroment":{"date":11,"time":"12:00","season":0,"weather":0},"player":{"x":150,"y":77},"stats":{"level":1,"health":10,"experience":0},"inventory":[{"resource_path":"res://Items/AppleItem.tres","amount":1}],"world_data":{}}
