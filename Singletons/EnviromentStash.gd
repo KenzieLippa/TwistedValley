@@ -23,8 +23,8 @@ func _on_update_min():
 	if currMinute >= 60:
 		currMinute = 0
 		update_hour()
-	print("Time: "+str(currHour)+ ":", str(currMinute) + "\n"
-	+"day: " + str(currDay) + " Season: "+ str(currSeason) + " Year: " + str(currYear))
+	#print("Time: "+str(currHour)+ ":", str(currMinute) + "\n"
+	#+"day: " + str(currDay) + " Season: "+ str(currSeason) + " Year: " + str(currYear))
 	Events.emit_signal("update_time")
 func update_hour():
 	currHour +=1

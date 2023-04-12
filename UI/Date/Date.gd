@@ -5,6 +5,9 @@ extends Node
 onready var hour = $"%Hour"
 onready var minute = $"%Minute"
 onready var am_pm = $"%AmPm"
+onready var day = $"%Day"
+onready var year = $"%Year"
+onready var season = $"%Season"
 
 
 func _ready():
@@ -22,3 +25,7 @@ func _update_time():
 		minute.text = str(EnviromentStash.currMinute)
 	else:
 		minute.text = "00"
+	day.text = " Day: "+str(EnviromentStash.currDay)
+	season.text = " Season: "+str(EnviromentStash.currSeason)
+	year.text = " Year: "+ str(EnviromentStash.currYear)
+	

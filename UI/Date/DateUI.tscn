@@ -12,9 +12,10 @@ anchor_right = 1.0
 margin_left = -70.0
 margin_bottom = 40.0
 grow_horizontal = 0
+custom_constants/separation = 0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 100.0
+margin_right = 105.0
 margin_bottom = 19.0
 custom_constants/separation = 0
 
@@ -77,16 +78,86 @@ align = 2
 
 [node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer/HBoxContainer"]
 margin_left = 70.0
-margin_right = 100.0
+margin_right = 105.0
 margin_bottom = 19.0
-rect_min_size = Vector2( 30, 0 )
+rect_min_size = Vector2( 35, 0 )
 theme = ExtResource( 2 )
 
 [node name="AmPm" type="Label" parent="VBoxContainer/HBoxContainer/PanelContainer2"]
 unique_name_in_owner = true
 margin_left = 4.0
 margin_top = 4.0
-margin_right = 26.0
+margin_right = 31.0
 margin_bottom = 15.0
 theme = ExtResource( 2 )
 align = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 19.0
+margin_right = 105.0
+margin_bottom = 39.0
+custom_constants/separation = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/HBoxContainer2"]
+margin_right = 52.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+theme = ExtResource( 2 )
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer2/PanelContainer"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 48.0
+margin_bottom = 16.0
+
+[node name="Day" type="Label" parent="VBoxContainer/HBoxContainer2/PanelContainer/MarginContainer"]
+unique_name_in_owner = true
+margin_right = 44.0
+margin_bottom = 11.0
+text = " Day : 1"
+
+[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer/HBoxContainer2"]
+margin_left = 52.0
+margin_right = 105.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+theme = ExtResource( 2 )
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer2/PanelContainer2"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 49.0
+margin_bottom = 16.0
+
+[node name="Year" type="Label" parent="VBoxContainer/HBoxContainer2/PanelContainer2/MarginContainer"]
+unique_name_in_owner = true
+margin_right = 45.0
+margin_bottom = 11.0
+text = " Year : 1"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 39.0
+margin_right = 105.0
+margin_bottom = 59.0
+custom_constants/separation = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/HBoxContainer3"]
+margin_right = 105.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+theme = ExtResource( 2 )
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer3/PanelContainer"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 101.0
+margin_bottom = 16.0
+
+[node name="Season" type="Label" parent="VBoxContainer/HBoxContainer3/PanelContainer/MarginContainer"]
+unique_name_in_owner = true
+margin_right = 97.0
+margin_bottom = 11.0
+text = " Season: Spring"
