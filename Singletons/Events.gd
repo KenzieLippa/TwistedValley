@@ -11,3 +11,5 @@ signal dialogue_finished
 #signal for the showing of menu
 signal request_show_overworld_menu()
 signal request_update_camera_limits(limits)#send out a box
+
+signal update_time

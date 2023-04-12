@@ -29,7 +29,9 @@ func save_game() -> void:
 		#save the date and time for now
 		"enviroment" : {
 			"date" : EnviromentStash.currDay,
-			"time" : EnviromentStash.currTime,
+			"minute" : EnviromentStash.currMinute,
+			"hour" : EnviromentStash.currHour,
+			"year" : EnviromentStash.currYear,
 			"season" : EnviromentStash.currSeason,
 			"weather" : EnviromentStash.currWeather
 		},
@@ -77,7 +79,9 @@ func load_game() -> void:
 	
 	#set the date and time
 	EnviromentStash.currDay = load_data.enviroment.date
-	EnviromentStash.currTime = load_data.enviroment.time
+	EnviromentStash.currMinute= load_data.enviroment.minute
+	EnviromentStash.currHour = load_data.enviroment.hour
+	EnviromentStash.currYear = load_data.enciroment.year
 	EnviromentStash.currSeason = load_data.enviroment.season
 	EnviromentStash.currWeather = load_data.enviroment.weather
 	
