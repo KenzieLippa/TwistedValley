@@ -10,6 +10,8 @@ enum Weather {SUNNY, CLOUDY, RAINING, SNOWING}
 var currWeather = Weather.SUNNY
 var currMinute = 0
 var currHour = 9
+#var dateAndTime = preload("res://Time/Date/DateAndTime.tscn")
+#var date_and_time = DateAndTime.instance()
 
 #var date_and_time = RefrenceStash.dateAndTime
 

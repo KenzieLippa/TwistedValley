@@ -69,6 +69,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Battle/BattleActions/DamageBattleAction.gd"
 }, {
+"base": "Resource",
+"class": "DnDInventory",
+"language": "GDScript",
+"path": "res://Items/NewInventory/Items/DnDInventory.gd"
+}, {
 "base": "Area2D",
 "class": "Door",
 "language": "GDScript",
@@ -98,6 +103,11 @@ _global_script_classes=[ {
 "class": "Item",
 "language": "GDScript",
 "path": "res://Items/Item.gd"
+}, {
+"base": "Resource",
+"class": "Item2",
+"language": "GDScript",
+"path": "res://Items/NewInventory/Items/Item2.gd"
 }, {
 "base": "Node",
 "class": "Math",
@@ -177,12 +187,14 @@ _global_script_class_icons={
 "ClassStats": "",
 "ContextMenu": "",
 "DamageBattleAction": "",
+"DnDInventory": "",
 "Door": "",
 "FocusMenu": "",
 "HealingItem": "",
 "Interactable": "",
 "Inventory": "",
 "Item": "",
+"Item2": "",
 "Math": "",
 "MeleeBattleAction": "",
 "NPC": "",
@@ -219,7 +231,7 @@ Transition="*res://UI/Transition.tscn"
 MusicPlayer="*res://Singletons/MusicPlayer.tscn"
 SaveManager="*res://Singletons/SaveManager.gd"
 EnviromentStash="*res://Singletons/EnviromentStash.gd"
-DateAndTime="*res://UI/Date/DateAndTime.tscn"
+DateAndTime="*res://Time/Date/DateAndTime.tscn"
 
 [display]
 

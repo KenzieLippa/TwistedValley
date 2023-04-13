@@ -27,5 +27,6 @@ func _update_time():
 		minute.text = "00"
 	day.text = " Day: "+str(EnviromentStash.currDay)
 	season.text = " Season: "+str(EnviromentStash.currSeason)
+	#print(EnviromentStash.currSeason)
 	year.text = " Year: "+ str(EnviromentStash.currYear)
 	
