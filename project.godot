@@ -224,14 +224,14 @@ default_bus_layout="res://Other/default_bus_layout.tres"
 SceneStack="*res://Singletons/SceneStack.gd"
 RefrenceStash="*res://Singletons/RefrenceStash.gd"
 Events="*res://Singletons/Events.gd"
-GlobalUi="*res://UI/GlobalUI.tscn"
 LevelSwapper="*res://Singletons/LevelSwapper.gd"
 WorldStash="*res://Singletons/WorldStash.gd"
-Transition="*res://UI/Transition.tscn"
 MusicPlayer="*res://Singletons/MusicPlayer.tscn"
 SaveManager="*res://Singletons/SaveManager.gd"
 EnviromentStash="*res://Singletons/EnviromentStash.gd"
+Transition="*res://UI/Transition.tscn"
 DateAndTime="*res://Time/Date/DateAndTime.tscn"
+GlobalUi="*res://UI/GlobalUI.tscn"
 
 [display]
 
@@ -315,6 +315,11 @@ ui_down={
 grow={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":80,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ui_left_mouse={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
  ]
 }
 

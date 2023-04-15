@@ -19,3 +19,5 @@ func show_message(message : String) -> void:
 	#pause so th player cant move around
 	get_tree().paused = true
 	label.text = message
+
+#originally was layer 128

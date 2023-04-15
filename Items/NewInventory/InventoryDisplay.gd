@@ -5,6 +5,9 @@ var inventory = preload("res://Items/NewInventory/Items/Inventory.tres")
 
 func _ready():
 	inventory.connect("items_changed", self, "_on_items_changed")
+	inventory.make_items_unique()
+	#load into singleton so theres always a refrence to it because then it wont delete
+	#if there is no refrence then it will delete
 	#on startup update the inventory
 	update_inventory_display()
 	
@@ -28,3 +31,12 @@ func _on_items_changed(indexes):
 	#when we connect the signal then we can see that the index has been updated
 	for item_index in indexes:
 		update_inventory_slot_display(item_index)
+		
+func _unhandled_input(event):
+	#input event that is unhandled, nothing has happened with it
+	#dont want this to run if we actually drop this into the slot
+	#will count tht as handeling the input
+	if event.is_action_released("ui_left_mouse"):
+		if inventory.drag_data is Dictionary:
+			#if you drop it it puts it back
+			inventory.set_item(inventory.drag_data.item_index, inventory.drag_data.item)
