@@ -1,0 +1,112 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Other/CharacterDisplay.gd" type="Script" id=1]
+[ext_resource path="res://PlaceHolderAssets/SO tutorial/Knight.png" type="Texture" id=2]
+[ext_resource path="res://UI/Themes/DefaultTheme.tres" type="Theme" id=3]
+
+[node name="CharacterDisplay" type="ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -172.0
+margin_bottom = -108.0
+theme = ExtResource( 3 )
+color = Color( 0, 0, 0, 1 )
+script = ExtResource( 1 )
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 4
+custom_constants/margin_top = 4
+custom_constants/margin_left = 4
+custom_constants/margin_bottom = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 144.0
+margin_bottom = 68.0
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer/HBoxContainer"]
+margin_right = 36.0
+margin_bottom = 64.0
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/CenterContainer"]
+margin_top = 14.0
+margin_right = 36.0
+margin_bottom = 50.0
+texture = ExtResource( 2 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+margin_left = 40.0
+margin_right = 140.0
+margin_bottom = 64.0
+size_flags_horizontal = 3
+
+[node name="Class" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+margin_right = 100.0
+margin_bottom = 11.0
+
+[node name="Class" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/Class"]
+margin_right = 34.0
+margin_bottom = 11.0
+text = "Class :"
+
+[node name="Data" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/Class"]
+margin_left = 38.0
+margin_right = 100.0
+margin_bottom = 11.0
+size_flags_horizontal = 3
+text = "Knight"
+
+[node name="Health" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+margin_top = 15.0
+margin_right = 100.0
+margin_bottom = 26.0
+
+[node name="Class" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/Health"]
+margin_right = 40.0
+margin_bottom = 11.0
+text = "Health :"
+
+[node name="Data" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/Health"]
+margin_left = 44.0
+margin_right = 100.0
+margin_bottom = 11.0
+size_flags_horizontal = 3
+text = "100"
+
+[node name="Strength" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+margin_top = 30.0
+margin_right = 100.0
+margin_bottom = 41.0
+
+[node name="Class" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/Strength"]
+margin_right = 50.0
+margin_bottom = 11.0
+text = "Strength :"
+
+[node name="Data" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/Strength"]
+margin_left = 54.0
+margin_right = 100.0
+margin_bottom = 11.0
+size_flags_horizontal = 3
+text = "100"
+
+[node name="Intelligence" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+margin_top = 45.0
+margin_right = 100.0
+margin_bottom = 56.0
+
+[node name="Class" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/Intelligence"]
+margin_right = 63.0
+margin_bottom = 11.0
+text = "Intelligence :"
+
+[node name="Data" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/Intelligence"]
+margin_left = 67.0
+margin_right = 100.0
+margin_bottom = 11.0
+size_flags_horizontal = 3
+text = "100"

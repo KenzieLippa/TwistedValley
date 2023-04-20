@@ -4,8 +4,8 @@ extends Node
 #var currTime : String = "12:00"
 var currDay : int = 1
 var currYear = 1 #will need to add this to th save file
-enum Seasons {SPRING, SUMMER, FALL, WINTER} 
-var currSeason = Seasons.SPRING
+
+var currSeason = Enums.Seasons.SPRING
 enum Weather {SUNNY, CLOUDY, RAINING, SNOWING}
 var currWeather = Weather.SUNNY
 var currMinute = 0
