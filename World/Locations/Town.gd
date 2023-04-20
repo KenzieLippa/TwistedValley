@@ -5,3 +5,8 @@ func _ready() ->void :
 	#if this music is not playing then you should play it
 	MusicPlayer.push_song(MusicPlayer.town_music)
 	#SaveManager.save_game() #may have to move later?
+
+#mouse does work
+#func _input(event):
+#	if event is InputEventMouseButton:
+#		print("Mouse clicked successfully read.")

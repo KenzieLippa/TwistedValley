@@ -21,3 +21,4 @@ func fade_from_color(color : Color, duration : float = 0.25) -> void:
 
 func set_color(color : Color) ->void:
 	color_rect.color = color
+#orriginally was layer 100
