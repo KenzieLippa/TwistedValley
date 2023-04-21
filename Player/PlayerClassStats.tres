@@ -5,7 +5,7 @@
 [ext_resource path="res://Player/PlayerBattleAnimations.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Battle/BattleActions/MeleeBattleAction.tres" type="Resource" id=4]
 [ext_resource path="res://Player/PlayerClassStats.gd" type="Script" id=5]
-[ext_resource path="res://Items/Inventory.tres" type="Resource" id=6]
+[ext_resource path="res://Items/RPGItems/Inventory.tres" type="Resource" id=6]
 
 [resource]
 script = ExtResource( 5 )

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
-[ext_resource path="res://Items/HealingItem.gd" type="Script" id=1]
+[ext_resource path="res://Items/RPGItems/HealingItem.gd" type="Script" id=1]
 [ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/Apple.png" type="Texture" id=2]
 
 [resource]

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://Items/FarmingItems/SOFarmingItems/ItemDetails.gd" type="Script" id=1]
+[ext_resource path="res://AssetsByMe/Sweetcorn.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+item_code = 3
+item_type = 1
+item_description = "Corn"
+item_sprite = ExtResource( 2 )
+long_description = "Stupid corn, tastes bad until you pop it some say. Others say its good with butter so who knows."
+item_use_grid_radius = 2
+item_use_radis = 0.0
+starting_item = false
+can_be_picked_up = true
+can_be_dropped = true
+can_be_eaten = true
+can_be_carried = true
