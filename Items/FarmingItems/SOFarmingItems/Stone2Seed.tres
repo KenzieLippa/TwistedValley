@@ -1,19 +1,19 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://Items/FarmingItems/SOFarmingItems/ItemDetails.gd" type="Script" id=1]
-[ext_resource path="res://PlaceHolderAssets/Farming/WateringCan.png" type="Texture" id=2]
+[ext_resource path="res://AssetsByMe/Stone2Seed.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
-item_code = 4
-item_type = 2
-item_name = "Basic Watering Can"
+item_code = 17
+item_type = 0
+item_name = "Stone 2 Seed"
 item_sprite = ExtResource( 2 )
-item_description = ""
-item_use_grid_radius = 1
+item_description = "Also a stoned seed, maybe should ask him where he gets his buds from"
+item_use_grid_radius = 0
 item_use_radis = 0.0
-starting_item = true
-can_be_picked_up = true
+starting_item = false
+can_be_picked_up = false
 can_be_dropped = false
 can_be_eaten = false
 can_be_carried = false

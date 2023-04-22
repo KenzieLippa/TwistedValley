@@ -7,9 +7,9 @@
 script = ExtResource( 1 )
 item_code = 1
 item_type = 0
-item_description = "Oak Acorn"
+item_name = "Acorn"
 item_sprite = ExtResource( 2 )
-long_description = "A small seed meant for growing trees"
+item_description = "Grows an oak tree when planted. Maybe it will be tall enough to touch the clouds..."
 item_use_grid_radius = 2
 item_use_radis = 0.0
 starting_item = false

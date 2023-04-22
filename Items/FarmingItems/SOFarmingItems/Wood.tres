@@ -1,19 +1,19 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://Items/FarmingItems/SOFarmingItems/ItemDetails.gd" type="Script" id=1]
-[ext_resource path="res://AssetsByMe/Pumpkin.png" type="Texture" id=2]
+[ext_resource path="res://AssetsByMe/Wood.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
-item_code = 2
+item_code = 9
 item_type = 1
-item_name = "Pumpkin"
+item_name = "Wood"
 item_sprite = ExtResource( 2 )
-item_description = "Can potentially be made into a light device but the jurry is still out on that."
+item_description = "Woods pretty fun, you should try it some time."
 item_use_grid_radius = 2
 item_use_radis = 0.0
 starting_item = false
 can_be_picked_up = true
 can_be_dropped = true
-can_be_eaten = true
+can_be_eaten = false
 can_be_carried = true

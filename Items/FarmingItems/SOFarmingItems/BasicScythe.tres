@@ -1,17 +1,17 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://Items/FarmingItems/SOFarmingItems/ItemDetails.gd" type="Script" id=1]
-[ext_resource path="res://PlaceHolderAssets/Farming/WateringCan.png" type="Texture" id=2]
+[ext_resource path="res://PlaceHolderAssets/Farming/Sycthe.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
-item_code = 4
-item_type = 2
-item_name = "Basic Watering Can"
+item_code = 18
+item_type = 6
+item_name = "Basic Scythe"
 item_sprite = ExtResource( 2 )
-item_description = ""
-item_use_grid_radius = 1
-item_use_radis = 0.0
+item_description = "Deaths weapon, also used on the fields, not sure how the imagry ran over."
+item_use_grid_radius = 2
+item_use_radis = 1.5
 starting_item = true
 can_be_picked_up = true
 can_be_dropped = false

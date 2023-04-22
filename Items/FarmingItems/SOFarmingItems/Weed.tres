@@ -1,19 +1,19 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://Items/FarmingItems/SOFarmingItems/ItemDetails.gd" type="Script" id=1]
-[ext_resource path="res://AssetsByMe/Pumpkin.png" type="Texture" id=2]
+[ext_resource path="res://PlaceHolderAssets/SproutLandsSprites/Items/Weed.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
-item_code = 2
+item_code = 21
 item_type = 1
-item_name = "Pumpkin"
+item_name = "Weed"
 item_sprite = ExtResource( 2 )
-item_description = "Can potentially be made into a light device but the jurry is still out on that."
+item_description = "The weeds are super annoying and sometimes illegal but damn does it make you smile"
 item_use_grid_radius = 2
 item_use_radis = 0.0
 starting_item = false
 can_be_picked_up = true
 can_be_dropped = true
-can_be_eaten = true
+can_be_eaten = false
 can_be_carried = true

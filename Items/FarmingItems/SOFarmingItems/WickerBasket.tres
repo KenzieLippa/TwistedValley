@@ -1,15 +1,15 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://Items/FarmingItems/SOFarmingItems/ItemDetails.gd" type="Script" id=1]
-[ext_resource path="res://PlaceHolderAssets/Farming/WateringCan.png" type="Texture" id=2]
+[ext_resource path="res://PlaceHolderAssets/Farming/Basket.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
-item_code = 4
-item_type = 2
-item_name = "Basic Watering Can"
+item_code = 13
+item_type = 7
+item_name = "Wicker Basket"
 item_sprite = ExtResource( 2 )
-item_description = ""
+item_description = "A basket to hold the veggies and harvest them too. Can't harvest without it, YET ;P"
 item_use_grid_radius = 1
 item_use_radis = 0.0
 starting_item = true

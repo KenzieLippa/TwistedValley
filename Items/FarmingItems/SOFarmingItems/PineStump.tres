@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://Items/FarmingItems/SOFarmingItems/ItemDetails.gd" type="Script" id=1]
+[ext_resource path="res://PlaceHolderAssets/SproutLandsSprites/objects/MediumStump.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+item_code = 12
+item_type = 0
+item_name = "Pine Tree Stump"
+item_sprite = ExtResource( 2 )
+item_description = "The stump of a pine, with still less wood for a brain than 90% of america"
+item_use_grid_radius = 0
+item_use_radis = 0.0
+starting_item = false
+can_be_picked_up = false
+can_be_dropped = false
+can_be_eaten = false
+can_be_carried = false

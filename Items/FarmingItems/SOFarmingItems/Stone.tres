@@ -1,19 +1,17 @@
-[gd_resource type="Resource" load_steps=3 format=2]
+[gd_resource type="Resource" load_steps=2 format=2]
 
 [ext_resource path="res://Items/FarmingItems/SOFarmingItems/ItemDetails.gd" type="Script" id=1]
-[ext_resource path="res://AssetsByMe/Sweetcorn.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
-item_code = 3
+item_code = 16
 item_type = 1
-item_name = "Sweet Corn"
-item_sprite = ExtResource( 2 )
-item_description = "a sweet piece of corn to be sold on the market. "
+item_name = "Stone"
+item_description = "its a fun time man, not sure what you can use this for but its a good time."
 item_use_grid_radius = 2
 item_use_radis = 0.0
 starting_item = false
 can_be_picked_up = true
 can_be_dropped = true
-can_be_eaten = true
+can_be_eaten = false
 can_be_carried = true

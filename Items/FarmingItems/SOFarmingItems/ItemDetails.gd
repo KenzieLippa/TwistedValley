@@ -3,9 +3,9 @@ class_name ItemDetails
 
 export(int) var item_code = 0
 export(Enums.ItemType) var item_type = Enums.ItemType.none
-export(String) var item_description = ""
+export(String) var item_name = ""
 export(Texture) var item_sprite
-export(String, MULTILINE) var long_description= ""
+export(String, MULTILINE) var item_description= ""
 #should be a short but there are no shorts so hopefully this works
 export(int) var item_use_grid_radius = 0 #using the grid
 export(float) var item_use_radis = 0 #using the radius

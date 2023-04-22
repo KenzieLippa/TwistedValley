@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://PlaceHolderAssets/Farming/Hoe.png" type="Texture" id=1]
+[ext_resource path="res://Items/FarmingItems/SOFarmingItems/ItemDetails.gd" type="Script" id=2]
+
+[resource]
+script = ExtResource( 2 )
+item_code = 5
+item_type = 3
+item_name = "Basic Hoe"
+item_sprite = ExtResource( 1 )
+item_description = "Almost as basic a hoe as you"
+item_use_grid_radius = 1
+item_use_radis = 0.0
+starting_item = true
+can_be_picked_up = true
+can_be_dropped = false
+can_be_eaten = false
+can_be_carried = false
