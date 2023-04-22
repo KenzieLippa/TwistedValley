@@ -222,7 +222,6 @@ default_bus_layout="res://Other/default_bus_layout.tres"
 [autoload]
 
 SceneStack="*res://Singletons/SceneStack.gd"
-RefrenceStash="*res://Singletons/RefrenceStash.gd"
 Events="*res://Singletons/Events.gd"
 LevelSwapper="*res://Singletons/LevelSwapper.gd"
 WorldStash="*res://Singletons/WorldStash.gd"
@@ -230,9 +229,10 @@ MusicPlayer="*res://Singletons/MusicPlayer.tscn"
 SaveManager="*res://Singletons/SaveManager.gd"
 EnviromentStash="*res://Singletons/EnviromentStash.gd"
 Transition="*res://UI/Transition.tscn"
-DateAndTime="*res://Time/Date/DateAndTime.tscn"
 GlobalUi="*res://UI/GlobalUI.tscn"
 Enums="*res://Singletons/Enums.gd"
+DateAndTime="*res://UI/Date/DateAndTime.tscn"
+RefrenceStash="*res://Singletons/RefrenceStash.gd"
 
 [display]
 
@@ -330,6 +330,7 @@ ui_left_mouse={
 2d_physics/layer_2="Characters"
 2d_physics/layer_3="Doors"
 2d_physics/layer_4="Interactables"
+2d_physics/layer_5="Items"
 
 [physics]
 

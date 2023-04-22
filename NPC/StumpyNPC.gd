@@ -1,7 +1,7 @@
 extends NPC
 
 const PLAYER := preload("res://Player/Player.tres")
-const APPLE_ITEM : Item = preload("res://Items/AppleItem.tres")
+const APPLE_ITEM : Item = preload("res://Items/RPGItems/AppleItem.tres")
 
 var inventory :Inventory = RefrenceStash.inventory
 var has_apple := false

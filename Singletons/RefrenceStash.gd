@@ -13,7 +13,7 @@ var playerStats : PlayerClassStats = load("res://Player/PlayerClassStats.tres")
 #now when loaded it wont create a new instance itll just refrence the same instance already in memory
 #causes it to be persistant accross th game
 #want the inventory to be persistant as well
-var inventory :Inventory  = load("res://Items/Inventory.tres")
+var inventory :Inventory  = load("res://Items/RPGItems/Inventory.tres")
 
 #var dateAndTime = DateAndTime.new()
 
