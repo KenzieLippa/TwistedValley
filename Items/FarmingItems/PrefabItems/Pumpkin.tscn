@@ -7,7 +7,7 @@
 extents = Vector2( 8, 8 )
 
 [node name="Pumpkin" instance=ExtResource( 2 )]
-_item_code = 2
+item_code = 2
 
 [node name="Sprite" parent="." index="0"]
 texture = ExtResource( 1 )

@@ -14,6 +14,8 @@ var last_door_connection = -1
 #tell godot tht shld always be a float and then telling specifically that theres no return value
 onready var animatedSprite := $AnimatedSprite
 onready var interactable_detector := $InteractableDetector
+onready var item_detector = $ItemDetector
+
 onready var enter_new_area := $Sounds/EnterNewArea
 onready var use_door := $Sounds/UseDoor
 
@@ -46,7 +48,9 @@ func _physics_process(delta : float) -> void:
 	
 	if is_moving():
 		animate_walk()
+		#rotate around both
 		interactable_detector.rotation = velocity.angle()
+		item_detector.rotation = velocity.angle()
 		encounter_check(delta)#if moving then pass in
 	else:
 		animate_idle()
@@ -142,6 +146,7 @@ func go_to_new_area(new_area_path : String) -> void:
 	Transition.fade_from_color(Color.black) #fade from black
 	
 func _on_DoorDetector_area_entered(door : Area2D) -> void:
+	#print("this is a door")
 	if not door is Door: return
 	#not a func but a variable and then the empty func
 	if door.new_area.empty(): return #if area isnt set in the inspector, return
@@ -153,3 +158,16 @@ func _on_DoorDetector_area_entered(door : Area2D) -> void:
 		enter_new_area.play()
 	call_deferred("go_to_new_area", door.new_area) #waits to allow godot to be ready
 	
+
+#when the area is entered
+
+
+
+func _on_ItemDetector_area_entered(item):
+	print("area was entered")
+	if not item is FarmItem: return
+	if item != null:
+		#get item details and print them
+		var itemDetails = InventoryManager.get_item_details(item.item_code)
+		print(itemDetails)
+		

@@ -90,27 +90,43 @@ position = Vector2( 0, 22 )
 
 [node name="Parsnip" parent="Items" instance=ExtResource( 17 )]
 position = Vector2( 67, 84 )
+collision_layer = 17
+collision_mask = 1
 
 [node name="Parsnip2" parent="Items" instance=ExtResource( 17 )]
 position = Vector2( 279, 135 )
+collision_layer = 17
+collision_mask = 1
 
 [node name="Pumpkin" parent="Items" instance=ExtResource( 18 )]
 position = Vector2( 125, 133 )
+collision_layer = 17
+collision_mask = 1
 
 [node name="Pumpkin2" parent="Items" instance=ExtResource( 18 )]
 position = Vector2( 13, 136 )
+collision_layer = 17
+collision_mask = 1
 
 [node name="Pumpkin3" parent="Items" instance=ExtResource( 18 )]
 position = Vector2( 229, 95 )
+collision_layer = 17
+collision_mask = 1
 
 [node name="SweetCorn" parent="Items" instance=ExtResource( 7 )]
 position = Vector2( 113, 36 )
+collision_layer = 17
+collision_mask = 1
 
 [node name="SweetCorn2" parent="Items" instance=ExtResource( 7 )]
 position = Vector2( 157, 160 )
+collision_layer = 17
+collision_mask = 1
 
 [node name="SweetCorn3" parent="Items" instance=ExtResource( 7 )]
 position = Vector2( 322, 130 )
+collision_layer = 17
+collision_mask = 1
 
 [editable path="Door"]
 [editable path="Door2"]
