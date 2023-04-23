@@ -169,5 +169,5 @@ func _on_ItemDetector_area_entered(item):
 	if item != null:
 		#get item details and print them
 		var itemDetails = InventoryManager.get_item_details(item.item_code)
-		print(itemDetails)
+		print(itemDetails.item_description)
 		
