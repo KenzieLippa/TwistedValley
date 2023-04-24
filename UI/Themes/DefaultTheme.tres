@@ -1,11 +1,20 @@
-[gd_resource type="Theme" load_steps=8 format=2]
+[gd_resource type="Theme" load_steps=10 format=2]
 
 [ext_resource path="res://UI/Themes/PanelStyleBox.tres" type="StyleBox" id=1]
 [ext_resource path="res://UI/Themes/WestwickFont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/ScrollBarBackground.png" type="Texture" id=3]
 [ext_resource path="res://PlaceHolderAssets/WestwickAssets/Sprites/ScrollBarButton.png" type="Texture" id=4]
+[ext_resource path="res://AssetsByMe/SignDesign.png" type="Texture" id=5]
 
 [sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="StyleBoxTexture" id=4]
+texture = ExtResource( 5 )
+region_rect = Rect2( 0, 0, 16, 16 )
+margin_left = 6.0
+margin_right = 6.0
+margin_top = 6.0
+margin_bottom = 6.0
 
 [sub_resource type="StyleBoxTexture" id=3]
 texture = ExtResource( 4 )
@@ -34,7 +43,7 @@ Button/styles/focus = SubResource( 1 )
 Button/styles/hover = SubResource( 1 )
 Button/styles/normal = SubResource( 1 )
 Button/styles/pressed = SubResource( 1 )
-PanelContainer/styles/panel = ExtResource( 1 )
+PanelContainer/styles/panel = SubResource( 4 )
 VScrollBar/styles/grabber = SubResource( 3 )
 VScrollBar/styles/grabber_highlight = SubResource( 3 )
 VScrollBar/styles/grabber_pressed = ExtResource( 1 )

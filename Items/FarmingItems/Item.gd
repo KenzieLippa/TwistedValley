@@ -1,8 +1,9 @@
 extends Node
 class_name FarmItem
 
-export(int) var item_code
+#export(int) var item_code
 export(Resource) var item
+onready var item_code = item.item_code
 #not sure if this is right or not
 #get access to the onready var of the sprite
 onready var sprite = $Sprite
