@@ -10,7 +10,7 @@ script = ExtResource( 2 )
 position = Vector2( 0, 0 )
 offset = Vector2( 0, -8 )
 
-[node name="Pause" type="Timer" parent="." index="2"]
-wait_time = 0.4
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2( 0, -1 )
 
 [connection signal="area_entered" from="." to="." method="_on_ReapableScenery_area_entered"]
