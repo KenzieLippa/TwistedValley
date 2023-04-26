@@ -22,3 +22,6 @@ var random_encounters := []
 var encounter_class : ClassStats
 
 var player : KinematicBody2D 
+
+var playerInitialInventoryCapacity = 24
+var playerMaximumInventoryCapacity = 48

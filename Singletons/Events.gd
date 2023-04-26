@@ -13,3 +13,10 @@ signal request_show_overworld_menu()
 signal request_update_camera_limits(limits)#send out a box
 
 signal update_time
+
+#event stuff for the farm inventory
+#not sure if i will end up sending the signals from the new inventory
+#items has to be an array but idk how to do this
+#any nessiscary events would need to subscribe to it
+#will create a func for any piece of code that subscribes (connect_signal)
+signal inventory_updated_event(location, items)

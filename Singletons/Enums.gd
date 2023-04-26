@@ -20,3 +20,10 @@ enum ItemType{
 	count
 }
 
+#inventory locations
+enum InventoryLocation{
+	player, 
+	#can use chests later maybe
+	chest,
+	count
+}

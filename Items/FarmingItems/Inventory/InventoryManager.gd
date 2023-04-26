@@ -4,7 +4,9 @@ extends Node
 var itemDetailsDictionary : Dictionary ={
 	
 }
-export(Resource) var list
+export(Resource) var list #our SO is a list of scriptable objects rn adds all the SO
+#might want to make it so that we only add to the array
+var inventoryList : Array #not sure how to multitype here, cld always look later
 var itemList : Array
 
 func _ready():
